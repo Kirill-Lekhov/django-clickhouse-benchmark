@@ -42,6 +42,8 @@ class Command(BaseCommand):
         print(self.divider)
         self.stage8(*args, **options)
         print(self.divider)
+        self.stage9(*args, **options)
+        print(self.divider)
 
     def pre(*args, **options):
         print(f"Orders count:", Order.objects.all().count())
